@@ -1,6 +1,15 @@
-## 安装包
-``` composer install --prefer-dist --no-dev --no-scripts ```
+## 安装过程
+* 安装包
 
+``` 
+composer install --prefer-dist --no-dev --no-scripts  
+```
+
+* 执行用户数据库migrate
+
+```
+php artisan migrate --package=cartalyst/sentry
+```
 
 
 
