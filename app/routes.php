@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function()
-{
-	return View::make('hello');
+{	
+	return 'comming soon!';
+	// return View::make('hello');
 });
