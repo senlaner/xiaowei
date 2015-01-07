@@ -8,24 +8,24 @@
 
 @task('code')
 	echo "code task ================="
-    cd /home/wwwroot/xiaowei
+    cd /data/website/xiaowei
 	git fetch && git checkout $1 && git reset --hard && git pull origin {{ isset($branch) ? $branch : "master" }}
 @endtask
 
 @task('master')
 	echo "master task ================="
-    cd /home/wwwroot/xiaowei
+    cd /data/website/xiaowei
 	git fetch && git checkout $1 && git reset --hard && git pull origin master
 @endtask
 
 @task('migrate')
 	echo "migrate task ================="
-	cd /home/wwwroot/xiaowei
+	cd /data/website/xiaowei
     php artisan migrate
 @endtask
 
 @task('composer')
 	echo "master task ================="
-    cd /home/wwwroot/xiaowei
+    cd /data/website/xiaowei
     composer install --prefer-dist --no-dev --no-scripts
 @endtask
