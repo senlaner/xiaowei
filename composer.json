@@ -8,6 +8,9 @@
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "v2.1.4"
 	},
+	"require-dev": {
+	    "way/generators": "~2.0"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
